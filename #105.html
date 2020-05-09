@@ -1,0 +1,45 @@
+<!--
+
+
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<script>
+const personas = [
+{
+nombre: "Jafet",
+edad: 17
+},
+{
+nombre: "Leslie",
+edad: 17
+},
+{
+nombre: "carlos2025",
+edad: 19
+},
+{
+nombre: "Rachel",
+edad: 19
+},
+{
+nombre: "Juan",
+edad: 18
+}
+];
+// Recuperar todas las personas mayores de edad
+const personasmayores = personas.filter((elemento, indice, arreglo) => elemento.edad >= 18);
+for (let persona of personasmayores)
+document.write(`${persona.nombre} ${persona.edad}<br>`);
+</script>
+</body>
+
+</html>
